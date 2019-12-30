@@ -10,6 +10,12 @@
       color: #DDD;
   }
 
+  #reset{
+      float: right;
+      font-size: larger;
+      color: blue;
+  }
+
   main {
       background: #EEE;
       height: 85vh;

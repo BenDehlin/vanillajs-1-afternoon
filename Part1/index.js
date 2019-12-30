@@ -5,12 +5,12 @@ const board = []
 function play(clickedId){
   let playerSpan = document.getElementById('player')
   let clickedElement = document.getElementById(clickedId)
-  if(playerSpan.innerText === 'X'){
+  if(playerSpan.innerText === 'X' && clickedElement.innerText === ''){
     playerSpan.innerText = 'O'
     clickedElement.innerText = 'X'
     board[clickedId] = 'X'
   }
-  else{
+  else if(playerSpan.innerText === 'O' && clickedElement.innerText === ''){
     playerSpan.innerText = 'X'
     clickedElement.innerText = 'O'
     board[clickedId] = 'O'
